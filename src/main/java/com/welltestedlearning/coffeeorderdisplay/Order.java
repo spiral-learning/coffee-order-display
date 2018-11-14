@@ -47,15 +47,15 @@ public class Order {
         status = "WAITING";
         break;
       case "WAITING":
+        status = "BREWING";
+        break;
+      case "BREWING":
         status = "COMPLETED";
         break;
       case "COMPLETED":
         status = "ABANDONED";
         break;
       case "ABANDONED":
-        status = "GARBAGE";
-        break;
-      case "GARBAGE":
       default:
         status = "NEW";
     }
@@ -70,6 +70,6 @@ public class Order {
   }
 
   public boolean isNotDone() {
-    return status.equals("NEW") || status.equals("WAITING");
+    return status.equals("NEW") || status.equals("WAITING") || status.equals("BREWING");
   }
 }
