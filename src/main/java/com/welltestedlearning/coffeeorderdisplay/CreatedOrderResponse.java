@@ -2,7 +2,7 @@ package com.welltestedlearning.coffeeorderdisplay;
 
 public class CreatedOrderResponse {
   private Long orderNumber; // our ID
-  private Long kioskId; // meal order kiosk's Id
+  private Long kioskId; // order kiosk's Id
 
   public Long getOrderNumber() {
     return orderNumber;

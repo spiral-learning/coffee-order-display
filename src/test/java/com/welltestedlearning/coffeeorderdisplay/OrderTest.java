@@ -1,10 +1,10 @@
 package com.welltestedlearning.coffeeorderdisplay;
 
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
 import org.springframework.http.ResponseEntity;
 
 import static org.assertj.core.api.Assertions.assertThat;
-import static org.mockito.Matchers.any;
+import static org.mockito.Mockito.any;
 import static org.mockito.Mockito.mock;
 import static org.mockito.Mockito.when;
 
@@ -56,6 +56,9 @@ public class OrderTest {
     order.moveToNextState();
     assertThat(order.getStatus())
         .isEqualTo("WAITING");
+    order.moveToNextState();
+    assertThat(order.getStatus())
+        .isEqualTo("BREWING");
     order.moveToNextState();
     assertThat(order.getStatus())
         .isEqualTo("COMPLETED");

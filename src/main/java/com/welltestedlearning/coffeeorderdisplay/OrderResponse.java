@@ -2,7 +2,7 @@ package com.welltestedlearning.coffeeorderdisplay;
 
 public class OrderResponse {
   private Long orderNumber; // our ID number
-  private Long kioskId; // order ID from external meal kiosk
+  private Long kioskId; // order ID from external coffee kiosk
   private String status;
 
   public Long getOrderNumber() {

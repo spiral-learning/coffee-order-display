@@ -10,8 +10,8 @@ import java.util.concurrent.atomic.AtomicLong;
 
 @Repository
 public class OrderRepository {
-  private Map<Long, Order> mealOrderMap = new HashMap<>();
-  private AtomicLong sequence = new AtomicLong(1);
+  private final Map<Long, Order> mealOrderMap = new HashMap<>();
+  private final AtomicLong sequence = new AtomicLong(1);
 
   Order findOne(Long id) {
     return mealOrderMap.get(id);

@@ -4,7 +4,7 @@ import java.util.List;
 
 public class Order {
   private Long id; // our ID for the Repository
-  private Long kioskId; // order ID from external meal kiosk
+  private Long kioskId; // order ID from external coffee kiosk
   private List<String> orderItems;
   private String status = "NEW";
   private String kioskName;
