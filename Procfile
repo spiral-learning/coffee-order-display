@@ -1,1 +1,0 @@
-web: java -Dserver.port=$PORT -jar build/libs/coffeeorderdisplay-1.0.0.jar
